@@ -1,0 +1,26 @@
+<qMaverick>
+    <Meta>
+        <name>qMaverickLITE</name>
+        <version>v2.5</version>
+        <modelnumber>1</modelnumber>
+        <pathname>CrossField</pathname>
+        <lastpath>CrossField</lastpath>
+        <usepretrained>true</usepretrained>
+        <headless>false</headless>
+        <render_times>1</render_times>
+    </Meta>
+    <Q>
+        <Epoch>50</Epoch>
+        <gamma>0.1</gamma>
+        <epsilon>0.08</epsilon>
+        <decay>0.01</decay>
+    </Q>
+    <Enviorment>
+        <height>8</height>
+        <width>16</width>
+        <startX>15</startX>
+        <startY>4</startY>
+        <endX>1</endX>
+        <endY>4</endY>
+    </Enviorment>
+</qMaverick>
