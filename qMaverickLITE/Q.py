@@ -10,7 +10,7 @@ from LoadConfig import loader
 def write_actions(step, pastActions, pathName):
     try:
         # /media/gabriel/DD2D-1A4E/q-learning/
-        file = open("/home/gabriel/PycharmProjects/qMaverickLITE/" + "actions" + str(pathName) + ".csv", "w")
+        file = open("/home/gabriel/Documents/GitHub/QLearning/qMaverickLITE/" + "actions" + str(pathName) + ".csv", "w")
         file.write("Step[" + str(step) + "] " + str(pastActions))
         file.close()
     except:
@@ -19,7 +19,7 @@ def write_actions(step, pastActions, pathName):
 
 def write_xys(step, pastXY, pathName):
     try:
-        file = open("/home/gabriel/PycharmProjects/qMaverickLITE/" + "xys" + str(pathName) + ".csv", "w")
+        file = open("/home/gabriel/Documents/GitHub/QLearning/qMaverickLITE/" + "xys" + str(pathName) + ".csv", "w")
         file.write("Step[" + str(step) + "]" + str(pastXY))
         file.close()
     except:
@@ -28,7 +28,7 @@ def write_xys(step, pastXY, pathName):
 
 def write_qtables(qtable, pathName):
     try:
-        np.savetxt("/home/gabriel/PycharmProjects/qMaverickLITE/" + "qtables" + str(pathName) + ".csv", qtable,
+        np.savetxt("/home/gabriel/Documents/GitHub/QLearning/qMaverickLITE/" + "qtables" + str(pathName) + ".csv", qtable,
                    delimiter=",")
     except:
         exit("Couldn't find qtables.csv")

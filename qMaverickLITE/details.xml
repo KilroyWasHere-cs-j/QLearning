@@ -5,7 +5,7 @@
         <modelnumber>1</modelnumber>
         <pathname>CrossField</pathname>
         <lastpath>CrossField</lastpath>
-        <usepretrained>true</usepretrained>
+        <usepretrained>false</usepretrained>
         <headless>false</headless>
         <render_times>1</render_times>
     </Meta>
