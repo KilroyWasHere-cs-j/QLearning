@@ -10,7 +10,7 @@ from LoadConfig import loader
 def write_actions(step, pastActions, pathName):
     try:
         # /media/gabriel/DD2D-1A4E/q-learning/
-        file = open("/home/gabriel/Documents/GitHub/QLearning/qMaverickLITE/" + "actions" + str(pathName) + ".csv", "w")
+        file = open("/home/gabriel//PycharmProjects/QLearning/qMaverickLITE/" + "actions" + str(pathName) + ".csv", "w")
         file.write("Step[" + str(step) + "] " + str(pastActions))
         file.close()
     except:
@@ -19,7 +19,7 @@ def write_actions(step, pastActions, pathName):
 
 def write_xys(step, pastXY, pathName):
     try:
-        file = open("/home/gabriel/Documents/GitHub/QLearning/qMaverickLITE/" + "xys" + str(pathName) + ".csv", "w")
+        file = open("/home/gabriel/PycharmProjects/QLearning/qMaverickLITE/" + "xys" + str(pathName) + ".csv", "w")
         file.write("Step[" + str(step) + "]" + str(pastXY))
         file.close()
     except:
@@ -28,7 +28,7 @@ def write_xys(step, pastXY, pathName):
 
 def write_qtables(qtable, pathName):
     try:
-        np.savetxt("/home/gabriel/Documents/GitHub/QLearning/qMaverickLITE/" + "qtables" + str(pathName) + ".csv", qtable,
+        np.savetxt("/home/gabriel//PycharmProjects/QLearning/qMaverickLITE/" + "qtables" + str(pathName) + ".csv", qtable,
                    delimiter=",")
     except:
         exit("Couldn't find qtables.csv")
@@ -45,7 +45,7 @@ class QLib:
 
     def load_qtable(self, pathName):
         results = []
-        with open("/home/gabriel/PycharmProjects/qMaverickLITE/" + "qtables" + pathName + ".csv") as csvfile:
+        with open("/home/gabriel//PycharmProjects/QLearning/qMaverickLITE/" + "qtables" + pathName + ".csv") as csvfile:
             reader = csv.reader(csvfile, quoting=csv.QUOTE_NONNUMERIC)  # change contents to floats
             for row in reader:  # each row is a list
                 results.append(row)

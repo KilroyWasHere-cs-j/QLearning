@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 class loader:
 
     def __init__(self):
-        self.mytree = ET.parse('/home/gabriel/Documents/GitHub/QLearning/qMaverickLITE/details.xml')
+        self.mytree = ET.parse('/home/gabriel//PycharmProjects/QLearning/qMaverickLITE/details.xml')
         self.myroot = self.mytree.getroot()
 
     # Get the models meta data
