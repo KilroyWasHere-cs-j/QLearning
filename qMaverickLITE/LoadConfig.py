@@ -1,10 +1,16 @@
+import os
 import xml.etree.ElementTree as ET
+
+
+def get_local_path():
+    return os.getcwd()
 
 
 class loader:
 
     def __init__(self):
-        self.mytree = ET.parse('/home/gabriel//PycharmProjects/QLearning/qMaverickLITE/details.xml')
+        #/home/gabriel/PycharmProjects/QLearning/qMaverickLITE/details.xml
+        self.mytree = ET.parse(get_local_path() + "/details.xml")
         self.myroot = self.mytree.getroot()
 
     # Get the models meta data
