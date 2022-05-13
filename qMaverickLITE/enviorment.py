@@ -193,39 +193,39 @@ class Env:
                 elif self.wallX[1] == j and self.wallY[1] == i:
                     print("X", end='')
                 elif self.wallX[2] == j and self.wallY[2] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[3] == j and self.wallY[3] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[4] == j and self.wallY[4] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[4] == j and self.wallY[4] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[5] == j and self.wallY[5] == i:
                     print(  "X", end='')
                 elif self.wallX[6] == j and self.wallY[6] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[7] == j and self.wallY[7] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[8] == j and self.wallY[8] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[9] == j and self.wallY[9] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[10] == j and self.wallY[10] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[11] == j and self.wallY[11] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[12] == j and self.wallY[12] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[13] == j and self.wallY[13] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[14] == j and self.wallY[14] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[15] == j and self.wallY[15] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[16] == j and self.wallY[16] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 elif self.wallX[17] == j and self.wallY[17] == i:
-                    print(  "X", end='')
+                    print("X", end='')
                 else:
                     print(".", end='')
             print("")

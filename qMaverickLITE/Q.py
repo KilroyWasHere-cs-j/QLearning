@@ -10,7 +10,6 @@ from LoadConfig import loader
 def get_local_path():
     return os.getcwd()
 
-
 def write_actions(step, pastActions, pathName):
     try:
         # /media/gabriel/DD2D-1A4E/q-learning/
@@ -49,7 +48,7 @@ class QLib:
 
     def load_qtable(self, pathName):
         results = []
-        with open(get_local_path() + "qtables" + pathName + ".csv") as csvfile:
+        with open(get_local_path() + "/qtables" + pathName + ".csv") as csvfile:
             reader = csv.reader(csvfile, quoting=csv.QUOTE_NONNUMERIC)  # change contents to floats
             for row in reader:  # each row is a list
                 results.append(row)
@@ -94,7 +93,6 @@ class QLib:
             qtable = self.load_qtable(pathName=self.lastModelName)
         else:
             qtable = np.random.rand(self.env.stateCount, self.env.actionCount).tolist()
-
         print(self.name)
         print(self.version)
         print("Use pretrained Q Table", self.usePreTrained)
@@ -106,8 +104,8 @@ class QLib:
             steps = 0
             while not done:
                 render_count += 1
+
                 if "false" in self.render:
-                    if render_count == int(self.render_times):
                         os.system('clear')
                         print("Epsilon: ", self.epsilon)
                         print("Epochs: ", self.epochCount, "/", self.epochs)
