@@ -6,7 +6,7 @@
         <pathname>CrossField</pathname>
         <lastpath>CrossField</lastpath>
         <usepretrained>true</usepretrained>
-        <headless>false</headless>
+        <headless>true</headless>
         <render_times>0</render_times> <!--Not used-->
     </Meta>
     <Q>
